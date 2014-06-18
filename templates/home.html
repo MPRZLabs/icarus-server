@@ -1,0 +1,12 @@
+{% extends 'core.html' %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Icarus Server</h1>
+  </div>
+  <div class="jumbotron">
+    {% include 'weather.html' with context %}
+  </div>
+</div>
+{% endblock %}

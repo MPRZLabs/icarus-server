@@ -1,0 +1,7 @@
+{% block weather %}
+<div class="weather">
+  <h4>Weather for {{weather.location.city}}, {{weather.location.country}}</h4>
+  <h3>{{weather.temperature}}, {{weather.text}}</h5>
+  <h5>Sunrise: {{weather.sun.rise}} | Sunset: {{weather.sun.set}}</h6>
+</div>
+{% endblock %}
